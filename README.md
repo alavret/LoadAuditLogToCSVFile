@@ -1,4 +1,4 @@
-# Yandex 360 Audit Log Fetcher
+# Yandex 360 Audit Log Fetcher into CSV file
 
 ## Overview
 
@@ -40,7 +40,7 @@ message_receive;2025-02-04 04:03:22.825;2025;02;04;04;03;petrov@domain.ru;Пет
    - File rotation is based on size (1 MB max, 5 backups).
 
 > [!WARNING]
-> To prevent conflicts with the CSV format (where separators is semicolons), when exporting mail logs, a semicolon is searched for in the Subject field and replaced with a string `&_semicolon_&`
+> To prevent conflicts with the CSV format (where separators is semicolons), when exporting mail logs, a semicolon symbol (`;`) is searched for in the Subject field and replaced with a string `&_semicolon_&`
 
 ## Parameters
 
